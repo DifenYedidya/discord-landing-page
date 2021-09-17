@@ -1,0 +1,21 @@
+Algoritma:
+    Diberikan variabel jari-jari, Luas, Keliling, serta phi dengan nilai = 3,14. 
+    Kemudian Input nilai dari jari-jari sesuai user 
+    Selanjutnya Hitung nilai Luas dengan rumus phi kali jari-jari kali jari-jari
+    Dan Hitung juga nilai dari Keliling dengan rumus 2 kali phi kali jari-jari
+    Terakhir tampilkan nilai dari Luas dan Keliling
+
+Pseudocode
+    STORE “phi” to 3,14
+    DECLARE “R”, “Luas”, “Keliling”
+    INPUT VALUE OF “R”
+
+    CALCULATE “phi” times “R” times “R”
+    SET “Luas” value with calculation result
+
+    CALCULATE 2 times “phi” times “R”
+    SET “Keliling” value with calculation result
+
+    DISPLAY “Luas” 
+    DISPLAY “Keliling”
+ 

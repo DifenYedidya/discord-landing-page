@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <span><a href="">HOME</a></span>
+      <span><a href="">PRODUCT</a></span>
+      <span><a href="">GALLERY</a></span>
+      <span><a href="">BLOG</a></span>
+      <span><a href="">INVENTORY</a></span>
+    </nav>
+    <div class="profile">
+      <img src="assets/pic3.png" alt="profilePic" />
+      <div class="profile-general">
+        <h1 id="name">Difen Yedidya Sjamsu</h1>
+        <p id="role">Front End Developer</p>
+        <button id="editBtn" class="profile-button edit" onclick="getData()">
+          Edit
+        </button>
+        <button class="profile-button resume">Resume</button>
+      </div>
+      <div class="profile-detail bolded">
+        <p>Availability</p>
+        <p>Usia</p>
+        <p>Lokasi</p>
+        <p>Pengalaman</p>
+        <p>Email</p>
+      </div>
+      <div class="profile-detail">
+        <p id="availability">Full Time</p>
+        <p id="usia">21</p>
+        <p id="lokasi">Jakarta</p>
+        <p id="pengalaman">3</p>
+        <p id="email">difen@gmail.com</p>
+      </div>
+    </div>
+    <div class="profile form-width">
+      <form name="formValidate" onsubmit="return formValidation()">
+        <label for="name">Nama</label>
+        <input
+          id="fname"
+          type="text"
+          name="name"
+          placeholder="masukan nama anda"
+        />
+        <label for="role">Role</label>
+        <input id="frole" type="text" name="role" />
+        <label for="availability">Availability</label>
+        <input id="favailability" type="text" name="Availability" />
+        <label for="usia">Usia</label>
+        <input id="fusia" type="text" name="usia" />
+        <label for="lokasi">Lokasi</label>
+        <input id="flokasi" type="text" name="lokasi" />
+        <label for="years">Years Experience</label>
+        <input id="fyears" type="text" name="years" />
+        <label for="email">Email</label>
+        <input id="femail" type="text" name="email" />
+
+        <button
+          class="profile-button submit-btn"
+          type="submit"
+          value="submit"
+          onclick="saveData()"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="js/tampilkanData.js"></script>
+  </body>
+</html>
